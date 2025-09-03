@@ -4,11 +4,11 @@ import { Login } from "./login/login";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Login],
+  imports: [Login],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('gym-management');
+  // protected readonly title = signal('gym-management');
 }
   

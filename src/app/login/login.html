@@ -1,1 +1,22 @@
-<p>login works!</p>
+<div class="login-container">
+  <p-card header="Gym Management Login" styleClass="login-card">
+    <div class="p-fluid">
+      <div class="p-field">
+        <label for="username">Username</label>
+        <input id="username" type="text" pInputText [(ngModel)]="username" />
+      </div>
+
+      <div class="p-field">
+        <label for="password">Password</label>
+        <input id="password" type="password" pInputText [(ngModel)]="password" />
+      </div>
+
+      <button 
+        pButton 
+        label="Login" 
+        (click)="login()" 
+        class="p-mt-3 p-button-rounded p-button-primary">
+      </button>
+    </div>
+  </p-card>
+</div>
